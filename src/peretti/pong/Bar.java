@@ -59,7 +59,7 @@ public class Bar extends Entity{
 		double y = (y1 + y2) / 2 - locy; //Get the y in function of the bar, not the screen
 		if(y < 0) y = 0;
 		if(y > height) y = height;
-		System.out.println(1 / height * y);
+		//System.out.println(1 / height * y);
 		return 1 / height * y;		
 	}
 

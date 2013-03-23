@@ -84,7 +84,7 @@ public class Ball extends Entity {
 		}
 		//
 		else if(vx < 0 && (a = gm.left.getPercCollision(locx, locx + width, locy, locy + height)) != -1){
-			System.out.println("left: a = " + a + " angle: " + ((90.0f - minAngle) - (1 - a) * (180.0f - 2 * minAngle)));
+			//System.out.println("left: a = " + a + " angle: " + ((90.0f - minAngle) - (1 - a) * (180.0f - 2 * minAngle)));
 			//setVelocity(v + vInc);
 			setDirection((90.0f - minAngle) - (1 - a) * (180.0f - 2 * minAngle), v + vInc);
 			//vx *= -1;
@@ -92,7 +92,7 @@ public class Ball extends Entity {
 			return;
 		}
 		else if(vx > 0 && (a = gm.right.getPercCollision(locx, locx + width, locy, locy + height)) != -1){
-			System.out.println("right: a = " + a + " angle: " + ((90.0f + minAngle) + (1 - a) * (180.0f - 2 * minAngle)));
+			//System.out.println("right: a = " + a + " angle: " + ((90.0f + minAngle) + (1 - a) * (180.0f - 2 * minAngle)));
 			//setVelocity(v + vInc); 
 			setDirection((90.0f + minAngle) + (1 - a) * (180.0f - 2 * minAngle), v + vInc);
 			//vx *= -1;
